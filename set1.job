@@ -1,0 +1,13 @@
+# submit desc file
+
+initialdir = output/set1
++MaxRuntime = 86400
+executable = exec.sh
+arguments = $(run) $(run).root
+log = log/$(run).log
+output = out/$(run).out
+error = err/$(run).err
+
+transfer_input_files = ../../FileList/set1/$(run)
+
+queue run from FileList/set1/set1.list
